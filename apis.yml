@@ -1,7 +1,29 @@
 aid: assemble
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/assemble.png
 name: Assemble
-description: Assemble is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Assemble builds autonomous AI agents that help enterprise IT and business-systems
+  teams automate development work inside core platforms such as Salesforce, SAP,
+  Workday, and NetSuite. The agents scope changes across integrated ERP, CRM, and
+  HRIS systems, understand cross-system dependencies, implement and validate
+  modifications, and keep a complete audit trail so teams can review agent work,
+  approve modifications, and revert individual changes or restore a system to a
+  prior state. Assemble is a Y Combinator (Summer 2026) company targeting IT and
+  business-systems teams managing complex enterprise transformations. This profile
+  was added to the API Evangelist network as a portfolio-lead stub; as of this
+  enrichment pass the company publishes no public developer API, documentation, or
+  OpenAPI, so only its verified public identity and website properties are captured.
 url: https://raw.githubusercontent.com/api-evangelist/assemble/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Enterprise Software
+- IT Automation
+- ERP
+- CRM
+- HRIS
+- SaaS
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/assemble-domain-security.yml
+- type: Website
+  url: https://www.assemble.ai/
+- type: Login
+  url: https://app.assemble.ai
+- type: TermsOfService
+  url: https://www.assemble.ai/terms
+- type: PrivacyPolicy
+  url: https://www.assemble.ai/privacy
+- type: Support
+  url: mailto:founders@assemble.ai
+- type: LinkedIn
+  url: https://www.linkedin.com/company/use-assemble/
+- type: Twitter
+  url: https://x.com/assembleagents
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
